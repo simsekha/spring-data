@@ -5,12 +5,12 @@ import java.util.List;
 /**
  * Created by jt on 11/14/15.
  */
-public interface CRUDService<T> {
+public interface CRUDService<T,V> {
     List<?> listAll();
 
-    T getById(Integer id);
+    T getById(V id);
 
     T saveOrUpdate(T domainObject);
 
-    void delete(Integer id);
+    void delete(V id);
 }

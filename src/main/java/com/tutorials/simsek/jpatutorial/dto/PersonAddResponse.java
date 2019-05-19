@@ -1,6 +1,6 @@
 package com.tutorials.simsek.jpatutorial.dto;
 
-public class PersonAddRequest extends BaseRequest{
+public class PersonAddResponse extends BaseResponse{
 	private Long id;
 	private String name;
 	public Long getId() {

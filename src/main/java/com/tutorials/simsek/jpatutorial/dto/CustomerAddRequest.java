@@ -1,8 +1,15 @@
 package com.tutorials.simsek.jpatutorial.dto;
 
-public class PersonAddRequest extends BaseRequest{
+public class CustomerAddRequest extends BaseRequest{
 	private Long id;
 	private String name;
+	private String customerName;
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
 	public Long getId() {
 		return id;
 	}
