@@ -11,9 +11,9 @@ public abstract class BaseCommand<T extends BaseRequest, V extends BaseResponse,
 		this.converter = converter;
 	}
 
-	public abstract V perform(T req);
+	protected abstract V perform(T req);
 
-	public abstract V validateRequest(T req);
+	protected abstract V validateRequest(T req);
 
 	protected S convert(T t) {
 		return converter.convert(t);
