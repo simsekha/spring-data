@@ -2,7 +2,7 @@ package com.tutorials.simsek.jpatutorial.dto;
 
 import com.tutorials.simsek.jpatutorial.entity.Person;
 
-public class PersonAddResponse extends BaseResponse{
+public class PersonUpdateResponse extends BaseResponse{
 	private Long id;
 	private String name;
 	private Person person;

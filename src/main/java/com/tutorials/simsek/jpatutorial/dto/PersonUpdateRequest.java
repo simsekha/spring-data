@@ -1,17 +1,8 @@
 package com.tutorials.simsek.jpatutorial.dto;
 
-import com.tutorials.simsek.jpatutorial.entity.Person;
-
-public class PersonAddResponse extends BaseResponse{
+public class PersonUpdateRequest extends BaseRequest{
 	private Long id;
 	private String name;
-	private Person person;
-	public Person getPerson() {
-		return person;
-	}
-	public void setPerson(Person person) {
-		this.person = person;
-	}
 	public Long getId() {
 		return id;
 	}

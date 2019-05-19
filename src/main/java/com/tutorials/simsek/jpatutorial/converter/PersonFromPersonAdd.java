@@ -1,13 +1,13 @@
 package com.tutorials.simsek.jpatutorial.converter;
 
-import org.springframework.core.convert.converter.*;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 import com.tutorials.simsek.jpatutorial.dto.PersonAddRequest;
 import com.tutorials.simsek.jpatutorial.entity.Person;
 
 @Component
-public class PersonConverter implements Converter<PersonAddRequest, Person> {
+public class PersonFromPersonAdd implements Converter<PersonAddRequest, Person> {
 
 	@Override
 	public Person convert(PersonAddRequest source) {
@@ -16,5 +16,4 @@ public class PersonConverter implements Converter<PersonAddRequest, Person> {
 		p.setName(source.getName());
 		return p;
 	}
-
 }
